@@ -1,0 +1,86 @@
+/* Menu Hamburguer */
+.menu-hamburguer {
+    display: none; /* Oculta o menu hamburguer por padrão */
+    flex-direction: column;
+    cursor: pointer;
+    margin: 20px;
+    z-index: 1001; /* Garante que o menu hamburguer fique acima da lista */
+}
+
+.menu-hamburguer .bar {
+    background-color: #fff; /* Cor das barras do menu hamburguer quando fechado */
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Menu hamburguer visível em telas menores */
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white; /* Fundo branco */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        padding: 0; /* Remove o padding para evitar problemas de deslocamento */
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center; /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza verticalmente */
+        z-index: 1000; /* Garante que a lista de navegação fique acima do conteúdo, mas abaixo do menu hamburguer */
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    
+    .nav-list.aberto {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .nav-list li {
+        margin: 15px 0; /* Aumenta o espaçamento entre os itens */
+    }
+
+    .nav-list li a {
+        color: #333;
+        text-decoration: none;
+        font-size: 24px; /* Aumenta o tamanho da fonte */
+        transition: color 0.3s;
+    }
+
+    .nav-list li a:hover {
+        color: #007bff; /* Cor do link ao passar o mouse */
+    }
+
+
+    /* Estilo do menu hamburguer quando o menu está aberto */
+    .menu-hamburguer.aberto .bar {
+        background-color: #333; /* Cor das barras do menu hamburguer quando aberto */
+    }
+
+    .menu-hamburguer.aberto .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-hamburguer.aberto .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-hamburguer.aberto .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-6px, -7px);
+    }
+    
+}
+.hide-title {
+    visibility: hidden;
+}

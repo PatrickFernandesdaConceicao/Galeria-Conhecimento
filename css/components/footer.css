@@ -1,0 +1,65 @@
+
+.button-subir{
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    margin-top: -64px;
+}
+.main-footer{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+    margin-top: 64px;/*TIrar*/
+    padding: 0px 5%;
+    padding-top: 32px;
+    background-color: rgba(0, 0, 0, 0.857);
+    flex-wrap: wrap;
+}
+footer .logo-header{
+    width: 200px;
+}
+footer .logo-header img{
+    width: 100%;
+}
+.menu-footer{
+    width: 100%;
+    text-align: center;
+}
+.nav-menu-footer{
+    width: 85%;
+}
+.menu-footer {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.menu-footer li a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    border-bottom: none;
+    border-bottom: 5px solid transparent;
+    padding: 5px;
+}
+.menu-footer li a:hover{
+    transition: 0.7s;
+    border-bottom: 5px solid white;
+}
+footer .title-submenu{
+    background-image: url(../../img/down-arrow-white.png);
+}
+.direitos-footer{
+    width: 100%;
+    padding: 64px 0;
+    color: white;
+    background-color: var(--blue);
+}
+.menu-footer p{
+    font-size: 12px;
+    color: white;
+    
+}

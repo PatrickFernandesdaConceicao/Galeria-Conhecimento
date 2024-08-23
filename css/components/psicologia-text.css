@@ -1,0 +1,86 @@
+/* Estilos para a seção de Neuropsicologia */
+.section-pattern {
+    background: #f4f4f4;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-pattern {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-pattern h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.section-content-psicologia {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.section-content-psicologia p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.section-content-psicologia h2 {
+    font-size: 2rem;
+    color: #222;
+    margin: 20px 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.section-content-psicologia h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin: 20px 0 10px;
+}
+
+.section-content-psicologia img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.read-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.read-button:hover {
+    background: #0056b3;
+}
+
+.amazon-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #eee;
+    margin-top: 5px;
+}
+.section-pattern .animate-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section-pattern .animate-item.fade-in-up {
+    opacity: 1;
+    transform: translateY(0);
+}

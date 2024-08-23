@@ -1,0 +1,104 @@
+.main-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-header .logo-header img{
+    width: 200px;
+}
+.nav-list{ 
+    color: rgb(245, 231, 231);
+    font-size: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    height: 12vh;
+    align-items: center;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid transparent;
+    padding: 10px 0;
+    margin-left: 20px;
+}
+.nav-list a:hover{
+    transition: 0.7s;
+    border-bottom: 5px solid white;
+}
+.home-title{
+    color: white;
+    font-size: 60px;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-homepage{
+    background-image: url(../../assets/Home.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.negritude-homepage{
+    background-image: url(../../assets/negritude-back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.meioambiente-back{
+    background-image: url(../../assets/meioambiente-back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.psicologia-back{
+    background-image: url(../../assets/psicologia-back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.LGBT-back{
+    background-image: url(../../assets/lgbt-back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media (max-width: 670px){
+    .psicologia-back{
+        background-image: url(../../assets/mobile-psico.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .LGBT-back{
+        background-image: url(../../assets/mobile-lgbt.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .negritude-homepage{
+        background-image: url(../../assets/mobile-negritude.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+/* Estilos para a animação do header */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-header, .home-title {
+    opacity: 0; /* Inicia invisível */
+    animation: fadeInUp 0.3s ease-out forwards; /* Animação aplicada */
+    animation-delay: 0.5s; /* Atraso para um efeito mais suave */
+}
+
+/* Seletivamente atrasar a animação do título */
+.home-title {
+    animation-delay: 0.3s; /* O título aparece após o header */
+}

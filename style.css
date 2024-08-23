@@ -1,0 +1,28 @@
+@import url(components/header.css);
+@import url(components/sobre-nos.css);
+@import url(components/title-pattern.css);
+@import url(components/footer.css);
+@import url(components/negritude-text.css);
+@import url(components/meioambiente-text.css);
+@import url(components/themes.css);
+@import url(components/psicologia-text.css);
+@import url(components/lgbt.css);
+@import url(components/menu-hamb.css);
+
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+}
+
+
+@media (max-width: 670px){
+    .menu-footer{
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+
+}

@@ -1,0 +1,219 @@
+
+.home-title{
+    color: white;
+    font-size: 60px;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-homepage{
+    background-image: url(../assets/brasil-back.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Seções com Texto e Imagem */
+.Historia, .Cultura, .literatura, .Minorias, .paisagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 48px;
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+/* Ajusta a largura e centraliza o conteúdo dentro das seções */
+.texto-historia, .texto-cultura, .texto-literatura, .texto-minorias, .texto-paisagens {
+    width: 60%;
+    padding-top: 48px;
+    text-align: justify; /* Justifica o texto */
+    margin: 0 auto; /* Garante que o conteúdo está centralizado dentro da seção */
+}
+
+/* Estilos para os cabeçalhos */
+.texto-historia h1, .texto-cultura h1, .texto-literatura h1, .texto-minorias h1, .texto-paisagens h1 {
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.texto-historia h2, .texto-cultura h2, .texto-literatura h2, .texto-minorias h2, .texto-paisagens h2 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* Estilos para os parágrafos */
+.texto-historia p, .texto-cultura p, .texto-literatura p, .texto-minorias p, .texto-paisagens p {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Imagens dentro das seções */
+.img-historia, .img-carnaval, .img-literatura, .img-minorias, .img-paisagens {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espaçamento entre o texto e a imagem */
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o conteúdo abaixo */
+}
+
+/* Estilos para as imagens */
+.img-historia img, .img-literatura img, .img-minorias img, .img-paisagens img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+}
+
+/* Imagens */
+.imagem-centralizada {
+    max-width: 100%; /* Garante que a imagem não exceda a largura da página */
+    height: auto; /* Mantém a proporção da imagem */
+}
+/* Seções com Texto e Imagem */
+.Historia, .Cultura, .literatura, .Minorias, .paisagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 48px;
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+/* Ajusta a largura e centraliza o conteúdo dentro das seções */
+.texto-historia, .texto-cultura, .texto-literatura, .texto-minorias, .texto-paisagens {
+    width: 60%;
+    padding-top: 48px;
+    text-align: justify; /* Justifica o texto */
+    margin: 0 auto; /* Garante que o conteúdo está centralizado dentro da seção */
+}
+
+/* Estilos para os cabeçalhos */
+.texto-historia h1, .texto-cultura h1, .texto-literatura h1, .texto-minorias h1, .texto-paisagens h1 {
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.texto-historia h2, .texto-cultura h2, .texto-literatura h2, .texto-minorias h2, .texto-paisagens h2 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* Estilos para os parágrafos */
+.texto-historia p, .texto-cultura p, .texto-literatura p, .texto-minorias p, .texto-paisagens p {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Imagens dentro das seções */
+.img-historia, .img-carnaval, .img-literatura, .img-minorias, .img-paisagens {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espaçamento entre o texto e a imagem */
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o conteúdo abaixo */
+}
+
+/* Estilos para as imagens */
+.img-historia img, .img-literatura img, .img-minorias img, .img-paisagens img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+}
+
+/* Imagens */
+.imagem-centralizada {
+    max-width: 100%; /* Garante que a imagem não exceda a largura da página */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+.button-subir {
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    margin-top: -64px;
+}
+
+/* Rodapé */
+.main-footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0px 5%;
+    padding-top: 32px;
+    background-color: rgba(0, 0, 0, 0.857);
+    flex-wrap: wrap;
+}
+
+footer .logo-header {
+    width: 200px;
+}
+
+footer .logo-header img {
+    width: 100%;
+}
+
+.menu-footer {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-menu-footer {
+    width: 85%;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-footer li a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    border-bottom: none;
+    border-bottom: 5px solid transparent;
+    padding: 5px;
+}
+
+.menu-footer li a:hover {
+    transition: 0.7s;
+    border-bottom: 5px solid white;
+}
+
+footer .title-submenu {
+    background-image: url(../../img/down-arrow-white.png);
+}
+
+.direitos-footer {
+    width: 100%;
+    padding: 64px 0;
+    color: white;
+    background-color: var(--blue);
+}
+
+.menu-footer p {
+    font-size: 12px;
+    color: white;
+}
+@media (max-width: 670px){
+    .main-homepage{
+        background-image: url(../assets/mobile-brasil.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
