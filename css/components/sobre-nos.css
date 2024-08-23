@@ -49,7 +49,7 @@
 }
 @media (max-width: 768px) {  
     .main-homepage{
-        background-image: url(../../assets/galeria.PNG);
+        background-image: url(../../assets/galeria.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
